@@ -13,7 +13,6 @@ function draw() {
   rotate(frameCount);
 
   let angle = sin(frameCount) * 300;
-  let angletwo = sin(frameCount) * 650;
 
   stroke(lerpColor(color('#00ffed'), color('#f00b51'), sin(frameCount)));
   strokeWeight(1);
@@ -24,5 +23,6 @@ function draw() {
   line(0, 0, angle, 0);
   line(0, 0, 0, -angle);
   line(0, 0, -angle, 0);
+  ellipse(0,0,angle + 400);
 
 }
